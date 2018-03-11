@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikita.myapplication.SecondActivity">
+
+    <com.example.nikita.myapplication.MyViewGroup2
+        android:id="@+id/tagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+
+        <com.example.nikita.myapplication.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Без запрета на отрисовку" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Без ID"/>
+
+        <EditText
+            android:id="@+id/without"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C ID"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClicSecond"
+            android:text="Переход на другой Activity"/>
+
+    </com.example.nikita.myapplication.MyViewGroup2>
+</android.support.constraint.ConstraintLayout>
